@@ -343,7 +343,7 @@ void ClearAndDrawDot(int i) {
 
 void scaleDataArray(byte ad_ch)
 {
-  byte *pdata, ch_mode, range;
+  byte *pdata, ch_mode, range, ch;
   short ch_off;
   int *idata;
   long a;
@@ -352,13 +352,15 @@ void scaleDataArray(byte ad_ch)
     ch_off = ch1_off;
     ch_mode = ch1_mode;
     range = range1;
+    ch = 1;
   } else {
     ch_off = ch0_off;
     ch_mode = ch0_mode;
     range = range0;
+    ch = 0;
   }
-  idata = (int *) data[sample+ad_ch];
-  pdata = data[sample+ad_ch];
+  idata = (int *) data[sample+ch];
+  pdata = data[sample+ch];
   for (int i = 0; i < SAMPLES; i++) {
     a = ((*idata++ + ch_off) * VREF[range] + 512) >> 10;
     if (a > LCD_YMAX) a = LCD_YMAX;
