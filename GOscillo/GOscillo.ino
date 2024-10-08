@@ -1,5 +1,5 @@
 /*
- * Arduino Oscilloscope using a 80x160 IPS TFT Version 1.00
+ * Arduino Oscilloscope using a 80x160 IPS TFT Version 1.01
  * The max realtime sampling rates are 17.2ksps with 2 channels and 307ksps with a channel.
  * The max equivalent time sampling rates is 16Msps with single channel.
  * + Pulse Generator
