@@ -30,4 +30,4 @@ fix_fft<br>
 Schematics:<br>
 <img src="GOscilloIPS.png">
 
-Description is here, although it is written in Japanese language: http://harahore.g2.xrea.com/arduino/IPSGOscillo.html
+Description is here, although it is written in Japanese language: https://ss1.xrea.com/harahore.g2.xrea.com/arduino/IPSGOscillo.html
